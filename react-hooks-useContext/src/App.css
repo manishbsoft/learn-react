@@ -1,0 +1,128 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 2em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Base styles for all custom inputs */
+.custom-input {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none; /* Removes the blue outline on focus in some browsers */
+  transition: border-color 0.3s; /* Smooth transition for focus effect */
+}
+
+/* Styling for the input when it's focused */
+.custom-input:focus {
+  border-color: #007BFF; /* Changes the border color to blue when focused */
+}
+
+/* Styles for the custom button */
+.custom-button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.custom-button:hover {
+  background-color: #0056b3; /* Slightly darker blue for hover effect */
+}
+
+/**
+<input type="text" class="custom-input" placeholder="Text Input">
+<input type="password" class="custom-input" placeholder="Password">
+<input type="email" class="custom-input" placeholder="Email">
+<input type="number" class="custom-input" placeholder="Number">
+<input type="submit" class="custom-button" value="Submit">
+
+*/
+
+.profile-container {
+  max-width: 400px;
+  margin: 40px auto;
+  border: 1px solid #e1e1e1;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Makes the image circular */
+  margin-bottom: 20px;
+}
+
+.profile-name {
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+}
+
+.profile-bio {
+  font-size: 16px;
+  color: #777;
+  margin: 20px 0;
+}
+
+.profile-details {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+.profile-details li {
+  margin-bottom: 10px;
+}
+
+.profile-details strong {
+  color: #333;
+}
